@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>Jsdelivr cache cleanup tool</title>
+<title>Jsdelivr缓存清理工具</title>
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
@@ -24,7 +24,7 @@
 $u=$_GET['u'];
 if ($u==""){
 ?>
-<div class="mdui-chip"><span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">assignment_turned_in</i></span> <span class="mdui-chip-title">输入请带上https奥</span></div><form action="./index.php" target="_blank"><div class="mdui-textfield mdui-textfield-floating-label"><label class="mdui-textfield-label">链接</label> <input class="mdui-textfield-input" type="text" name="u"></div><input class="mdui-btn mdui-ripple" type="submit" value="提交"></form>
+<div class="mdui-chip"><span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">assignment_turned_in</i></span> <span class="mdui-chip-title">请带上https</span></div><form action="./index.php" target="_blank"><div class="mdui-textfield mdui-textfield-floating-label"><label class="mdui-textfield-label">链接</label> <input class="mdui-textfield-input" type="text" name="u"></div><input class="mdui-btn mdui-ripple" type="submit" value="提交"></form>
 <a class="mdui-btn mdui-ripple mdui-btn-block" href="https://github.com/dYXMO/Jsdelivr-CCT">在Github查看源码</a>
 <?php
 }else{
