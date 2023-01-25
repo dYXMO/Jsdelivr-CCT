@@ -24,11 +24,12 @@
 $u=$_GET['u'];
 if ($u==""){
 ?>
-<div class="mdui-chip"><span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">assignment_turned_in</i></span> <span class="mdui-chip-title">请带上https</span></div><form action="./index.php" target="_blank"><div class="mdui-textfield mdui-textfield-floating-label"><label class="mdui-textfield-label">链接</label> <input class="mdui-textfield-input" type="text" name="u"></div><input class="mdui-btn mdui-ripple" type="submit" value="提交"></form>
+<div class="mdui-chip"><span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">assignment_turned_in</i></span> <span class="mdui-chip-title">在这里输入链接</span></div><form action="./index.php" target="_blank"><div class="mdui-textfield mdui-textfield-floating-label"><label class="mdui-textfield-label">链接</label> <input class="mdui-textfield-input" type="text" name="u"></div><input class="mdui-btn mdui-ripple" type="submit" value="提交"></form>
 <a class="mdui-btn mdui-ripple mdui-btn-block" href="https://github.com/dYXMO/Jsdelivr-CCT">在Github查看源码</a>
 <?php
 }else{
-$u=str_replace("https://cdn.jsdelivr","https://purge.jsdelivr",$u);
+$u=str_replace("https://","",$u);
+$u=str_replace("cdn.jsdelivr","https://purge.jsdelivr",$u);
 $b=file_get_contents($u);
 ?>
 
